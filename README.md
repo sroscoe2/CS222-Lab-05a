@@ -1,14 +1,32 @@
 # Programming II
 
-## Lab 5.0 - Parameterization
+## Lab 5.5 - Genericity & Parameterization
 
 An introduction to using polymorphism and parameterization in the Java programming language.
 
+### Attribution
+
 This is a lab assignment based on one used in Computer Science II (CSCE 156 & 156H) in the School of Computing
 at the University of Nebraska-Lincoln. 
-Originally written by Chris Bourke. Revised and modified by Sarah Roscoe for CS222 at [Saint Mary's College of California](https://www.stmarys-ca.edu/) in Fall 2024. 
+Originally written by Chris Bourke. Revised and instructions rewritten by Sarah Roscoe for CS 222 at [Saint Mary's College of California](https://www.stmarys-ca.edu/) in Fall 2025. 
 
-## Overview
+## Instructions
+
+The department of Math and Computer Science at SMC is expanding the CS program to graduate students as well. However, their codebase for representing students and courses is out of date. Your job is to make changes to the existing code to get it parameterized and working.
+
+1. Clone this lab from Github. Use this link: <https://github.com/sroscoe2/CS222-Lab-05.git> Refer to Lab 1 if you need a refresher for how to do so. REMEMBER: when importing, name your folder `firstnameLIpartnerLI-CS222-Lab-05a`
+
+2. Examine each of the 7 courses and discuss with your partner what they represent.
+
+In the following steps, you will 
+3. 
+
+
+^ WORKING ON
+----------------
+
+
+
 
 ### Resources
 
@@ -210,3 +228,4 @@ of object and that type of object must be a subtype of `Student`.
 errors and completely debug your programs.
 * Compress your Lab project to a zip file and name it `CS222-Lab05smc1` where `smc1` is YOUR SMC username.
 * Submit the zip file to Canvas. 
+
