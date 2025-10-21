@@ -6,9 +6,8 @@ An introduction to using polymorphism and parameterization in the Java programmi
 
 ### Attribution
 
-This is a lab assignment based on one used in Computer Science II (CSCE 156 & 156H) in the School of Computing
-at the University of Nebraska-Lincoln. 
-Originally written by Chris Bourke. Revised and instructions rewritten by Sarah Roscoe for CS 222 at [Saint Mary's College of California](https://www.stmarys-ca.edu/) in Fall 2025. 
+This is a "mini lab" assignment used in CS 222 at [Saint Mary's College of California](https://www.stmarys-ca.edu/) in Fall 2025. It is based on one used in Computer Science II (CSCE 156 & 156H) in the School of Computing at the University of Nebraska-Lincoln. 
+Originally written by Dr. Chris Bourke. Instructions were condensed by Dr. Sarah Roscoe.
 
 ## Instructions
 
@@ -16,46 +15,18 @@ The department of Math and Computer Science at SMC is expanding the CS program t
 
 1. Clone this lab from Github. Use this link: <https://github.com/sroscoe2/CS222-Lab-05.git> Refer to Lab 1 if you need a refresher for how to do so. REMEMBER: when importing, name your folder `firstnameLIpartnerLI-CS222-Lab-05a`
 
-2. Examine each of the 7 courses and discuss with your partner what they represent.
+2. Examine each of the 7 courses and discuss with your partner what they represent. Describe how each class should interact with the others. *For example*: "A `Droid` is NOT a `Student`, and should not be enrolled in a `Section` of a `Course`. 
 
-In the following steps, you will 
-3. 
+3. The main issue is that we want to restrict `Droid`s from being added to courses. You must solve this problem, which will account for about 3-5 lines of code to edit.
+    1. _Hint:_ Each `Section` currently enrolls `Object`s. What change do you make to a `Section` to allow only students? What change do you make to a `Course`? There may be more than one right answer. Discuss with your partner, make changes, then attempt to run the test cases.
 
-
-^ WORKING ON
-----------------
+4. **Getting Credit:** To get credit for this lab, show the instructor your code without syntax errors, and show the test cases passing.
 
 
+## Explanations -- written by Dr. Chris Bourke
 
 
-### Resources
-
-Prior to lab you should read/review the following resources.
-
--   Read the Oracle tutorial on Java Generics  
-    <https://docs.oracle.com/javase/tutorial/java/generics/index.html>
-
-### Lab Objectives & Topics
-
-Following the lab, you should:
-
--   Understand and be able to use method overloading and generics in
-    Java
-
-### Pair Programming
-
-You may work on this lab with a partner. You may work on one piece of code, but both of you should submit the work. You may send your partner a copy of the file and therefore turn in identical copies. You should also indicate on Canvas who you worked with. **Both of you should indicate your partner in a submission comment**. 
-
-In pair programming, one person is the *driver* and the other is the *navigator*. The driver is responsible for the computer keyboard and mouse. The navigator is responsible for figuring out what should be done, and telling the driver what to do. Neither role is "in charge", but both are responsible for coming up with solutions together. 
-
-Each week, you should try to alternate: if you were the driver last week, you should be navigator this week, or vice versa. Any conflicts should be resolved in your group. 
-
-## 1. Getting Started
-Clone this project code for this lab from GitHub in VS Code using the
-URL: https://github.com/sroscoe2/CS222-Lab05.git. Refer to Lab 1.0 for
-instructions on how to clone a project from GitHub.
-
-## 2. Polymorphism
+### Polymorphism
 
 Polymorphism is the ability for variables, methods, and classes to take
 on different forms (types) at different points in the execution of a
@@ -69,7 +40,7 @@ methods and behavior. Typically this is done so that code that can be
 written generally enough to be applied to type *S* can be applied to any
 subtype of *S*.
 
-## 2.1. Parameterized Polymorphism
+## Parameterized Polymorphism
 
 Parametric polymorphism is when code is written without a specific type
 and instead can be applied to any type or types. Typically, the
@@ -103,12 +74,7 @@ type must also be a subclass of a `Number`.
 
 
 
-## 3. Activity 
-
-In the following activity, you will explore parameterized polymorphism in the Java language. You will learn how to use generic types. 
-
-
-### 3.1. Creating Parameterized Classes
+## The Activity 
 
 In this activity you will explore how to parameterize classes in Java
 using generics, and observe the consequences of not parameterizing.
@@ -166,7 +132,7 @@ Follow the instructions below to parameterize your classes to conform to
 these rules and to understand the implications of not parameterizing
 your classes.
 
-### 3.1.1. Parameterizing a class
+### Options for parameterizing a class
 
 1.  Open the `CourseDemo`, `Course`, and `Section` class files. Two 
     instances of each entity (`Undergraduate`, `Gradaute`, `Droid`) 
@@ -191,7 +157,7 @@ Modify your code in the `CourseDemo` to create three separate sections (one
 for `Undergraduate`, `Graduate`, and `Droid`) and add the entities to the 
 appropriate section instead.
 
-### 3.1.2. Parameterizing with a Bound
+### Parameterizing with a Bound
 
 **Problem**: The `Course` class still allows us to add sections consisting of
 non-student objects
@@ -213,7 +179,7 @@ sections of one type of student (and so that no warnings or compiler errors are
 issued).  If your changes were correct, then adding the section of `Droid`s 
 should no longer be allowed.
 
-### 3.1.3. Parameterizing a class with a bound
+### Parameterizing a class with a bound
 
 **Problem**: though we can no longer add a section to a course with
 non-student objects, we are still able to instantiate a section with
@@ -221,11 +187,3 @@ non-student objects
 
 **Solution**: parameterize the `Section` class so that it can only hold one type
 of object and that type of object must be a subtype of `Student`.
-
-### 4. Testing, Submitting & Grading
-
-* Test your programs using the provided JUnit test suite(s).  Fix any
-errors and completely debug your programs.
-* Compress your Lab project to a zip file and name it `CS222-Lab05smc1` where `smc1` is YOUR SMC username.
-* Submit the zip file to Canvas. 
-
